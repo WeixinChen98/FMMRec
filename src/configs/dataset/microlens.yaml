@@ -1,0 +1,50 @@
+# Common Features
+USER_ID_FIELD: userID
+ITEM_ID_FIELD: itemID
+# RATING_FIELD: rating
+# TIME_FIELD: timestamp
+
+filter_out_cod_start_users: True
+
+inter_file_name: 'microlens.inter'
+
+# name of features
+vision_feature_file: 'image_feat.npy'
+vision_feature_size: 1000
+text_feature_file: 'text_feat.npy'
+text_feature_size: 768
+audio_feature_file: 'audio_feat.npy'
+audio_feature_size: 128
+
+# biased_vision_feature_file: 'biased_image_feat_epoch=1000.npy'
+# biased_text_feature_file: 'biased_text_feat_epoch=1000.npy'
+user_graph_dict_file: 'user_graph_dict.npy'
+
+field_separator: "\t"
+
+# FMMR: disc
+feature_columns: ["u_gender"]
+
+d_steps: 10
+disc_reg_weight: 0.1
+
+
+
+
+# BFMMR
+knn_k_uugraph: 2
+n_mg_uugraph_layers: 1
+mg_weight: 0.1
+mg_uugraph_text_weight: 0.6
+mg_uugraph_image_weight: 0.2
+mg_uugraph_audio_weight: 0.2
+
+
+
+biased_vision_feature_file: 'biased_v_feat_epoch=100.npy'
+biased_text_feature_file: 'biased_t_feat_epoch=40.npy'
+biased_audio_feature_file: 'biased_a_feat_epoch=70.npy'
+
+filtered_vision_feature_file: 'filtered_v_feat_epoch=100.npy'
+filtered_text_feature_file: 'filtered_t_feat_epoch=40.npy'
+filtered_audio_feature_file: 'filtered_a_feat_epoch=70.npy'
