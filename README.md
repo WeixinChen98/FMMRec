@@ -38,6 +38,25 @@ For the MicroLens dataset, we can run the code of the assembly of FMMRec fairnes
 > nohup python -u main.py --fairness_model BFMMR --knn_k_uugraph 7 --filter_mode shared --prompt_mode concat --recommendation_model DRAGON --dataset microlens --d_steps 10 --gpu_id 0 > MicroLens.out 2>&1 &
 ```
 
+## Citation
+
+If you find our work helpful, please consider citing our paper:
+
+```bibtex
+@article{chen2025causality,
+  title     = {Causality-Inspired Fair Representation Learning for Multimodal Recommendation},
+  author    = {Chen, Weixin and Chen, Li and Ni, Yongxin and Zhao, Yuhan},
+  year      = 2025,
+  journal   = {ACM Transactions on Information Systems},
+  volume    = {43},
+  number    = {6},
+  articleno = {153},
+  numpages  = {29}
+}
+```
+
+
+
 ## Acknowledgement
 The code of this repository is implemented based on the multimodal recommendation framework at [MMRec](https://github.com/enoche/MMRec).
 
