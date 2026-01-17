@@ -40,7 +40,7 @@ For the MicroLens dataset, we can run the code of the assembly of FMMRec fairnes
 
 ## Citation
 
-If you find our work helpful, please consider citing our paper:
+If you find this work helpful, please consider citing our paper:
 
 ```bibtex
 @article{chen2025causality,
